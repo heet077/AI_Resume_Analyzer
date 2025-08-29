@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..32,100..900&display=swap");
-@import "tw-animate-css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -147,6 +146,10 @@
   }
 
   /* Utility classes */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
+  }
+
   .gradient-border {
     @apply bg-gradient-to-b from-blue-50 to-blue-100 p-4 rounded-2xl;
     border: 1px solid rgba(167, 191, 241, 0.3);
@@ -277,6 +280,10 @@
     
     .navbar {
       @apply px-6;
+    }
+    
+    .auth-button {
+      @apply w-full;
     }
   }
 
