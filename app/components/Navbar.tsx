@@ -68,7 +68,17 @@ const Navbar = () => {
             <nav className="navbar relative">
                 <div className="flex items-center gap-8">
                     <Link to="/" className="flex items-center gap-2">
-                        <p className="text-2xl font-bold text-gradient">RESUMIND</p>
+                        <p 
+                            className="text-2xl font-bold"
+                            style={{
+                                background: 'linear-gradient(to right, #AB8C95, #000000, #8E97C5)',
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                                backgroundClip: 'text'
+                            }}
+                        >
+                            RESUMIND
+                        </p>
                     </Link>
                     
                     {/* Desktop Navigation */}
