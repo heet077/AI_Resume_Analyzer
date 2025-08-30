@@ -184,14 +184,14 @@ const Navbar = () => {
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     Dashboard
-                                </Link>
+            </Link>
                                 <Link 
                                     to="/upload" 
                                     className="block w-full p-3 text-left text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    Upload Resume
-                                </Link>
+                Upload Resume
+            </Link>
                             </div>
 
                             {/* Mobile Logout Button */}
@@ -207,7 +207,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 )}
-            </nav>
+        </nav>
 
             {/* Logout Confirmation Dialog */}
             <LogoutConfirmDialog
